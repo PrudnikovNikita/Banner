@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Slick слайдер</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+
+		<div class="wrapper">
+
+			<div class="slider">
+				<div class="slider__item filter">
+					<img th:src="${banner.getSrc()}" alt="">
+				</div>
+				<div class="slider__item">
+					<img th:src="${banner1.getSrc()}" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img th:src="${banner2.getSrc()}" alt="">
+				</div>
+				<div class="slider__item">
+					<img th:src="${banner3.getSrc()}" alt="">
+				</div>
+
+			</div>
+			
+
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script src="js/script.js"></script>
+
+		</div>
+	</body>
+</html>
+
+
+
